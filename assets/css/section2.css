@@ -1,0 +1,35 @@
+@keyframes animateDown {
+    from {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes animateUp {
+    from {
+        transform: translateY(200%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.animate-section #intro-title {
+    animation: animateDown ease-out 0.6s;
+}
+
+.animate-section #intro-ltitle {
+    animation: animateUp ease-out 0.6s;
+}
