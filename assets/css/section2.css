@@ -46,8 +46,26 @@
     }
 }
 
+@keyframes animateRightLeftStrong {
+    from {
+        transform: translateX(300%);
+        opacity: 0;
+    }
+
+    40% {
+        transform: translateX(200%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 section .animate-top-down {
@@ -64,4 +82,12 @@ section .animate-left-right {
 
 section .animate-right-left {
     animation: animateRightLeft ease-out 0.6s;
+}
+
+section .animate-right-left-2 {
+    animation: animateRightLeftStrong ease-out 1s;
+}
+
+section .animate-right-left-3 {
+    animation: animateRightLeftStrong ease-out 1.2s;
 }
