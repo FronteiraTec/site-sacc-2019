@@ -28,30 +28,31 @@ function isElementOutView(element) {
     return ((elemTop <= viewBot*0.72) && (elemBot >= viewTop));
 }
 
-function removeFromArray(array, item) {
-    console.log(array);
-    array.remove(item);
+// Gambiarra?: precisa ser refeito
+window.onload = function(event) {
+    let elements = document.querySelectorAll("#secIntro [scroll-sensitive]");
 
-    // for(var i = 0; i < array.length; i++) {
-    //     if (array[i] === item) {
-    //         array.splice(i, 1);
-    //     }
-    // }
-
-    console.log(array);
+    elements.forEach(element => {
+        let className = element.getAttribute("scroll-sensitive");
+        element.classList.add(className);
+    });
 }
 
-
-window.onload = function (event) {
-    document.getElementById("secIntro").focus();
-}
-
-window.onscroll = function (event) {
+window.onscroll = function(event) {
     let sections = document.getElementsByTagName("section");
     for (let section of sections) {
+
         if (isElementInView(section)) {
-            section.classList.add("animate-section");
-            setTimeout(removeFromArray, 600, section.classList, "animate-section");
+            let elements = document.querySelectorAll("#" + section.id + " [scroll-sensitive]");
+
+            elements.forEach(element => {
+                let className = element.getAttribute("scroll-sensitive");
+                element.classList.add(className);
+            });
+
+            // section.classList.add("animate-section");
+            // setTimeout(section.classList.remove, 600, "animate-section");
+
         } else {
 
         }

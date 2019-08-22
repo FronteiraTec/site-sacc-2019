@@ -1,4 +1,4 @@
-@keyframes animateDown {
+@keyframes animateTopDown {
     from {
         transform: translateY(-200%);
         opacity: 0;
@@ -10,7 +10,7 @@
     }
 }
 
-@keyframes animateUp {
+@keyframes animateBottomUp {
     from {
         transform: translateY(200%);
         opacity: 0;
@@ -22,14 +22,46 @@
     }
 }
 
+@keyframes animateLeftRight {
+    from {
+        transform: translateX(-200%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes animateRightLeft {
+    from {
+        transform: translateX(200%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
 
-.animate-section #intro-title {
-    animation: animateDown ease-out 0.6s;
+section .animate-top-down {
+    animation: animateTopDown ease-out 0.6s;
 }
 
-.animate-section #intro-ltitle {
-    animation: animateUp ease-out 0.6s;
+section .animate-bottom-up {
+    animation: animateBottomUp ease-out 0.6s;
+}
+
+section .animate-left-right {
+    animation: animateLeftRight ease-out 0.6s;
+}
+
+section .animate-right-left {
+    animation: animateRightLeft ease-out 0.6s;
 }
