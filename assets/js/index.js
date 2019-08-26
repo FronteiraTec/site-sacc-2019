@@ -13,15 +13,11 @@ function isElementInView(element) {
     let elemTop = element.offsetTop;
     let elemBot = elemTop + element.clientHeight;
 
-    if (element.id == "secProgramming") {
-        console.log("VT: " + viewTop + "\nVB:" + viewBot*0.72 + "\nET:" + elemTop + "\nEB:" + elemBot);
-    }
     return ((elemTop <= viewBot) && (elemBot >= viewTop));
 }
 
-// Gambiarra?: precisa ser refeito
 window.onload = function(event) {
-    let elements = document.querySelectorAll("#secIntro [scroll-sensitive]");
+    let elements = document.querySelectorAll("#intro [scroll-sensitive]");
 
     elements.forEach(element => {
         let className = element.getAttribute("scroll-sensitive");
@@ -41,11 +37,6 @@ window.onscroll = function(event) {
                 element.classList.add(className);
             });
 
-        } else {
-            // elements.forEach(element => {
-            //     let className = element.getAttribute("scroll-sensitive");
-            //     element.classList.remove(className);
-            // });
         }
     }
 }
