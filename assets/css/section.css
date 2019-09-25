@@ -92,6 +92,9 @@
     .about-item__title {
         font-size: 2.6rem;
     }
+    .btn--secondary{
+        margin-bottom: 7px;
+    }
 }
 
 /* Section */
