@@ -37,13 +37,13 @@
         font-size: 30px;
         background-position: center;
     }
-
     .intro__big-title {
         font-size: 55px;
     }
 }
 
 /* About */
+
 .about__title {
     color: #1f344e;
     font-size: 2.6rem;
@@ -57,7 +57,8 @@
     color: #00693c;
     font-size: 2.4rem;
 }
-.about-item--redirect{
+
+.about-item--redirect {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +66,8 @@
     border-radius: 5px;
     box-shadow: 0px 0px 4px 0px black;
 }
-.ticket-wrapper{
+
+.ticket-wrapper {
     border: 1px solid transparent;
     width: 100%;
     height: 50%;
@@ -73,31 +75,38 @@
     border-radius: 5px;
     padding: 30px;
 }
-.ticket-wrapper__title{
+
+.ticket-wrapper__title {
     margin-top: 20%;
 }
-.ticket-wrapper__buttons{
+
+.ticket-wrapper__buttons {
     margin-bottom: 20%;
 }
+
 @media (min-width: 768px) {
     .about__title {
         font-size: 3.1rem;
     }
-
     .about-item {
         margin-top: 0;
         margin-bottom: 2.5em;
     }
-
+    .about-item p {
+        margin-top: 0;
+        margin-bottom: 2.5em;
+        padding-left: 15px;
+    }
     .about-item__title {
         font-size: 2.6rem;
     }
-    .btn--secondary{
+    .btn--secondary {
         margin-bottom: 7px;
     }
 }
 
 /* Section */
+
 .speakers {
     background-color: rgba(0, 105, 62, .1);
 }
@@ -127,42 +136,48 @@
         font-size: 3.5em;
     }
 }
+
 /*programming*/
-.lecture{
+
+.lecture {
     margin-bottom: 1rem;
     margin-top: .9rem;
     display: flex;
 }
-.programming__title{
+
+.programming__title {
     font-size: 2.8em;
     text-align: center;
     color: #00693c;
 }
-.programming-item__day{
+
+.programming-item__day {
     font-size: 1.8rem;
     font-weight: 700;
     margin-top: 0.2em;
     color: #00693c;
-}   
-.lecture__time{
-    color:#1f344e;
+}
+
+.lecture__time {
+    color: #1f344e;
     margin-right: 11px;
 }
-.lecture__title{
-    color:#1f344e;
+
+.lecture__title {
+    color: #1f344e;
     font-size: 1.5em;
     line-height: 1.2;
 }
-.lecture__speaker{
-    color:#00693c;
+
+.lecture__speaker {
+    color: #00693c;
 }
 
 @media (min-width: 992px) {
-    .programming-item{
-        margin-bottom: 1rem; 
-    }  
-
-    .programming-item__day{
+    .programming-item {
+        margin-bottom: 1rem;
+    }
+    .programming-item__day {
         text-align: right;
         margin-top: 0;
     }
