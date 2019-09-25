@@ -57,7 +57,28 @@
     color: #00693c;
     font-size: 2.4rem;
 }
-
+.about-item--redirect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 0px black;
+}
+.ticket-wrapper{
+    border: 1px solid transparent;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 30px;
+}
+.ticket-wrapper__title{
+    margin-top: 20%;
+}
+.ticket-wrapper__buttons{
+    margin-bottom: 20%;
+}
 @media (min-width: 768px) {
     .about__title {
         font-size: 3.1rem;
@@ -86,7 +107,7 @@
 }
 
 .speaker-card__title {
-    color: #1f344e;
+    color: #1F344E;
     font-size: 1.8em;
     margin: 0;
 }
